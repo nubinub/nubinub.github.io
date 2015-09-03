@@ -25,53 +25,80 @@
 }*/
 
 body{
-	padding-top:70px;
-	background-color: #337ab7;
-
+	padding-top:50px;
+	background-color: #FFF;
 }
 .navbar-mynavbar{
-	
+	background-color:#FFF;
+	box-shadow:black 0px 0px 15px;
 	font-weight:bold;
-	box-shadow:black 1px 1px 5px;		
+	color:#555;
+	border:none;
+	border-bottom:#555 solid 1px;
+	border-radius:0;		
 }
-.navbar-mynavbar  .navbar-nav  > .active > a{
-	background-color:#337ab7;
-	color:white;
+.navbar-mynavbar  .navbar-nav li{
+	border-right:#555 solid 1px;
 }
-.navbar-mynavbar  .navbar-nav  > .active > a:hover{
-	background-color:#337ab7;
-	color:white;
+.navbar-mynavbar  .navbar-nav li:first-child{
+	border-left:#555 solid 1px;
 }
-.myjumbotron,.well-mywell{
-	border-radius:10px;
-	box-shadow:black 1px 1px 5px;
+.navbar-mynavbar  .navbar-nav  li a,.navbar-mynavbar  .navbar-nav  li a:visited{
+	background-color:#EEE;
+	color:#555;
+}
+.navbar-mynavbar  .navbar-nav  li a:hover{
+	background-color:#FFF;
+	color:#777;
 }
 .myjumbotron{
-	color:#555;
-
+	padding:0;		
+	border-radius:0;
+	background-color:#EEE;
+	box-shadow:black 0px 0px 15px;
+	border-bottom:#555 solid 1px;
+	color:#777;
+}
+.myjumbotron .page-header{
+	border:none;
 }
 .myjumbotron .page-header h1{
 	font-size:3em;
-}
+	font-weight:bold;
+	color:#555;
 
+}
 .well-mywell{
+	border-radius:0px;
+	box-shadow:#555 0px 0px 5px;
+	border:#555 solid 1px;
+	background-color:#EEE;
+}
+.well-mywell p,.well-mywell li,.well-mywell a{
 	color:#999;
-	font-size:1.2em;
+	
 }
 .well-mywell .page-header h2{
 	color:#555;
-	font-size:2.5em;
+	font-size:1.4em;
 	font-weight:bold;
 }
 .well-mywell  h3{
 	color: #777;
 	font-weight:bold;
-	font-size:2em;
+	font-size:1.2em;
+}
+.well-mywell  h4{
+	color: #999;
+	font-weight:bold;
+	font-size:1em;
 }
 .myheader{
 	margin:5px 0;
 	border-bottom:#555 1px solid;
-
 }
-
+.btn-mybtn{
+	background-color:#EEE;
+	border-radius:0;
+}
 
