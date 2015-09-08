@@ -26,67 +26,81 @@
 
 body{
 	padding-top:50px;
-	background-color: #FFF;
+	background-color: #DDD;
 }
 .navbar-mynavbar{
-	background-color:#FFF;
+	background-color:#000;
 	box-shadow:black 0px 0px 15px;
 	font-weight:bold;
-	color:#555;
+	color:#FFF;
 	border:none;
-	border-bottom:#555 solid 1px;
-	border-radius:0;		
+	border-radius:0;
+	border-bottom:#FFF solid 1px;		
 }
 .navbar-mynavbar  .navbar-nav li{
-	border-right:#555 solid 1px;
+	border-right:#FFF solid 1px;
 }
 .navbar-mynavbar  .navbar-nav li:first-child{
-	border-left:#555 solid 1px;
+	border-left:#FFF solid 1px;
 }
 .navbar-mynavbar  .navbar-nav  li a,.navbar-mynavbar  .navbar-nav  li a:visited{
-	background-color:#EEE;
-	color:#555;
+	background-color:#000;
+	color:#FFF;
 }
 .navbar-mynavbar  .navbar-nav  li a:hover{
 	background-color:#FFF;
-	color:#777;
+	color:#555;
 }
 .myjumbotron{
 	padding:0;		
 	border-radius:0;
-	background-color:#EEE;
+	background-color:#777;
 	box-shadow:black 0px 0px 15px;
 	border-bottom:#555 solid 1px;
-	color:#777;
+	color:#EEE;
+	font-size:1.2em;
 }
 .myjumbotron .page-header{
 	border:none;
 }
 .myjumbotron .page-header h1{
-	font-size:3em;
+	font-size:2em;
 	font-weight:bold;
-	color:#555;
-
+	color:#FFF;
+}
+.myjumbotron .page-header h1 small{
+	color:#EEE;
+}
+.myjumbotron p{
+	font-size:1em;
 }
 .well-mywell{
 	border-radius:0px;
 	box-shadow:#555 0px 0px 5px;
 	border:#555 solid 1px;
-	background-color:#EEE;
+	background-color:#FFF;
 }
-.well-mywell p,.well-mywell li,.well-mywell a{
-	color:#999;
+.well-mywell p,.well-mywell li, .well-mywell a{
+	color:#999;	
+}
+.well-mywell a{
 	
 }
+
 .well-mywell .page-header h2{
 	color:#555;
 	font-size:1.4em;
 	font-weight:bold;
+	border:none;
+}
+.well-mywell .page-header{
+	text-align:center;
+	border-bottom:none;
 }
 .well-mywell  h3{
 	color: #777;
 	font-weight:bold;
-	font-size:1.2em;
+	font-size:1.2em;	
 }
 .well-mywell  h4{
 	color: #999;
@@ -98,7 +112,11 @@ body{
 	border-bottom:#555 1px solid;
 }
 .btn-mybtn{
-	background-color:#EEE;
+	background-color:#FFF;
 	border-radius:0;
+	margin-top:2px;
+}
+.experience{
+	border-top:black solid 1px;
 }
 
