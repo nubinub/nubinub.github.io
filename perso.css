@@ -1,122 +1,28 @@
-/*body{
-	padding-top:70px;
-	background-color:#BBB;
-}
-.well{
-	background-color:#CCC;
-
-	box-shadow:black 1px 1px 5px;
-	border-radius:15px;
-}
-.jumbotron{
-	background-color:#DDD;
-	box-shadow:black 1px 1px 5px;
-	border-radius:15px;
-	border:#777 solid 1px;
-}
-.navbar{
-	background-color:#DDD;
-}
-.page-header{
-	margin:5px 0;
-	border-bottom:black double 3px;
-	border-top:black double 3px;
-	text-align:center;
-}*/
-
 body{
-	padding-top:50px;
-	background-color: #DDD;
+ 	padding-top:50px;
+ }
+.well-mywell h3{
+	font-size:1.4em;
 }
-.navbar-mynavbar{
-	background-color:#000;
-	box-shadow:black 0px 0px 15px;
-	font-weight:bold;
-	color:#FFF;
-	border:none;
-	border-radius:0;
-	border-bottom:#FFF solid 1px;		
-}
-.navbar-mynavbar  .navbar-nav li{
-	border-right:#FFF solid 1px;
-}
-.navbar-mynavbar  .navbar-nav li:first-child{
-	border-left:#FFF solid 1px;
-}
-.navbar-mynavbar  .navbar-nav  li a,.navbar-mynavbar  .navbar-nav  li a:visited{
-	background-color:#000;
-	color:#FFF;
-}
-.navbar-mynavbar  .navbar-nav  li a:hover{
-	background-color:#FFF;
-	color:#555;
-}
-.myjumbotron{
-	padding:0;		
-	border-radius:0;
-	background-color:#777;
-	box-shadow:black 0px 0px 15px;
-	border-bottom:#555 solid 1px;
-	color:#EEE;
+.well-mywell h4{
 	font-size:1.2em;
 }
-.myjumbotron .page-header{
-	border:none;
+.well-mywell h2{
+	font-size:1.4em;
 }
-.myjumbotron .page-header h1{
+.myjumbotron h1{
 	font-size:2em;
-	font-weight:bold;
-	color:#FFF;
-}
-.myjumbotron .page-header h1 small{
-	color:#EEE;
 }
 .myjumbotron p{
-	font-size:1em;
+	font-size:1.2em;
 }
-.well-mywell{
-	border-radius:0px;
-	box-shadow:#555 0px 0px 5px;
-	border:#555 solid 1px;
-	background-color:#FFF;
-}
-.well-mywell p,.well-mywell li, .well-mywell a{
-	color:#999;	
-}
-.well-mywell a{
-	
-}
-
-.well-mywell .page-header h2{
-	color:#555;
-	font-size:1.4em;
-	font-weight:bold;
-	border:none;
-}
-.well-mywell .page-header{
-	text-align:center;
-	border-bottom:none;
-}
-.well-mywell  h3{
-	color: #777;
-	font-weight:bold;
-	font-size:1.2em;	
-}
-.well-mywell  h4{
-	color: #999;
-	font-weight:bold;
-	font-size:1em;
-}
-.myheader{
-	margin:5px 0;
-	border-bottom:#555 1px solid;
+.page-header{
+	padding:0;
+	margin:0;
 }
 .btn-mybtn{
-	background-color:#FFF;
-	border-radius:0;
-	margin-top:2px;
+	margin:2px 2px;
 }
-.experience{
-	border-top:black solid 1px;
+.well-mywell p{
+	font-size: 1em;
 }
-
