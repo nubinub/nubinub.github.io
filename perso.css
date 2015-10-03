@@ -1,17 +1,26 @@
 body{
  	padding-top:50px;
+ 	background-color: #FFF;
+
  }
-.well-mywell h3{
-	font-size:1.4em;
+ .navbar-mynavbar{
+ 	box-shadow:#AAA 0 0 15px;
+ 	border-bottom:#AAA solid 1px;
+ }
+.myjumbotron{
+	border-bottom:#AAA solid 1px;
+	box-shadow: #AAA 0 0 15px;
+	background-color: #EEE;
 }
-.well-mywell h4{
-	font-size:1.2em;
+.myjumbotron:hover{
+	background-color: #DDD;
 }
-.well-mywell h2{
-	font-size:1.4em;
+.myjumbotron .page-header{
+	border:none;
 }
-.myjumbotron h1{
+.myjumbotron .page-header h1{
 	font-size:2em;
+	font-weight:bold;
 }
 .myjumbotron p{
 	font-size:1.2em;
@@ -20,9 +29,55 @@ body{
 	padding:0;
 	margin:0;
 }
-.btn-mybtn{
+.skill-btn{
 	margin:2px 2px;
+}
+.well-mywell{
+	box-shadow:#AAA 0 0 15px;
+	border-radius:0px;
+	border:#AAA solid 1px;
+	background-color:#EEE;
+	padding-right:0;
+	padding-left:0;
+	padding-bottom:0;
+}
+.well-mywell .myheader{
+	border:none;
+}
+.well-mywell .myheader h2{
+	border:none;
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
 }
 .well-mywell p{
 	font-size: 1em;
+}
+.image-wrapper{
+	padding-top:20px;
+	text-align:center;
+}
+.experience-unit{
+	border-top :#AAA solid 1px;
+	
+	padding:0px 5px 15px 15px;
+	margin-top:0px;
+	background-color:#EEE;
+}
+.experience-unit:hover{
+	background-color: #DDD;
+	box-shadow:#AAA 0 0 10px;
+}
+.experience-unit h3{
+	font-weight:bold;
+	font-size: 1.3em;
+}
+.experience-unit h4{
+	font-size:1em;
+	font-weight:bold;
+}
+.experience-unit .experience-keywords{
+	font-size:0.9em;
+	text-align:right;	
+	font-weight:bold;
 }
