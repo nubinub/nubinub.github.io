@@ -16,7 +16,11 @@
 				<ul class="nav navbar-nav">
 					<li>
 						<a href="#"> <span class="glyphicon glyphicon-home"></span></a>
-					</li>				
+					</li>
+					<li><a class="scroll-to-section" data-target="#formation" href="#">Formation</a></li>
+					<li><a class="scroll-to-section" data-target="#experience" href="#">Expériences</a></li>
+					<li><a class="scroll-to-section" data-target="#skills" href="#">Compétences</a></li>
+					<li><a class="scroll-to-section" data-target="#hobbies" href="#">Hobbies</a></li>				
 				</ul>
 			</div>	  
 		</nav>
@@ -38,7 +42,7 @@
 		
 			<div class="row">
 				<div class="col-sm-7">
-					<section class="well well-sm well-mywell">
+					<section id="formation" class="well well-sm well-mywell">
 						<div class="page-header myheader">
 							<h2><span class="glyphicon glyphicon-signal"></span> Formation</h2>
 						</div>
@@ -89,7 +93,7 @@
 						</section>					
 					</section>
 				
-					<section class="well well-sm well-mywell">
+					<section id="experience" class="well well-sm well-mywell">
 						<div class="page-header myheader">
 							<h2><span class="glyphicon glyphicon-fire"></span> Expériences</h2>
 						</div>
@@ -106,8 +110,7 @@
 										<small> Saint-Herblain </small>							
 									</h4>
 									<p>
-										Détaché auprès de SOPRA-STERIA. Mission développeur JAVA/JEE			
-										
+										Mission chez SOPRA-STERIA.										
 									</p>
 									<p class="experience-keywords">
 										Java, JEE, Spring
@@ -125,7 +128,7 @@
 						</section>
 						<section class="experience-unit">
 							<h3>
-								Formation Expert Java/JEE 
+								Formation Expert Java/JEE
 								<small> Juillet 2015 - Septembre 2015 </small>
 								
 							</h3>
@@ -136,12 +139,19 @@
 										<small> Saint-Herblain </small>							
 									</h4>
 									<p>
-										Formation Java/JEE.
-										
+										Formation Clever Institute d'une durée de 55 jours :
+										<ul>
+											<li>Module front-end : HTML , CSS , BootStrap , AngularJS</li>
+											<li>Module gestion de projet : méthodes agiles (SCRUM)</li>
+											<li>Module JAVA : Certification JAVA SE 7 </li>
+											<li>Module JEE :  JPA, EJB, Servlet, JSP ...</li>
+											<li>Module Spring :  Spring , Spring MVC</li>											
+										</ul>
 									</p>
 									<p class="experience-keywords">
-										Java, JEE, Spring
+										Java/JEE, JPA, JSP, Spring, Spring MVC, HTML, CSS, AngularJS
 									</p>
+									
 								</div>
 								<div class="col-xs-4 image-wrapper">
 									<a href="http://www.dta-ingenierie.fr/"><img src="http://www.dta-ingenierie.fr/img/logoDTA2.png" alt="" height="50px"></a>
@@ -160,14 +170,17 @@
 									<h4>
 										Aquafadas 
 										<small> Montpellier </small>
-										
 									</h4>
 									<p>
-										Développement d'une interface d'administration pour un service de notification aux appareils mobiles.
-										
+										Stage conventionné d'une durée de 5 mois
+										<ul>
+											<li>Développement d'une interface d'administration pour un service de notification aux appareils mobiles.</li>
+											<li>Développement d'une interface de reporting sur l'utilisation des WebServices.</li>
+											<li>Développement d'un SSO (Single Sign-On). </li>
+										</ul>
 									</p>
 									<p class="experience-keywords">
-										AngularJS, Bootstrap, PHP
+										AngularJS, Bootstrap, PHP , Node.JS
 									</p>
 								</div>
 								<div class="col-xs-4 image-wrapper">
@@ -205,7 +218,7 @@
 					</section>
 				</div>
 				<div class="col-sm-5">
-					<section class="well well-sm well-mywell">					
+					<section id="skills" class="well well-sm well-mywell">					
 					
 						<div class="page-header myheader">
 							<h2><span class="glyphicon glyphicon-list"></span> Compétences</h2>
@@ -236,6 +249,17 @@
 							</div>
 						</section>
 						<section class="experience-unit">
+							<h3>Certifications</h3>							
+							
+							<ul>
+								<li>
+									<strong>1Z0-803 Java SE 7 Programmer I,</strong>
+									<small>Septembre 2015</small>
+								</li>
+							</ul>
+							
+						</section>
+						<section class="experience-unit">
 							<h3>Langues</h3>
 							<div class="form-inline">
 								<div class="form-group">
@@ -247,7 +271,7 @@
 						</section>
 					</section>
 					
-					<section class="well well-sm well-mywell">
+					<section id="hobbies" class="well well-sm well-mywell">
 						<div class="page-header myheader">
 							<h2>
 								<span class="glyphicon glyphicon-heart"></span> Hobbies
@@ -282,7 +306,18 @@
 	<script>
 		$(document).ready(function(){
 			$('[data-toggle="tooltip"]').tooltip();
+
+			$(document).on("click",".scroll-to-section",function(event){
+				var idElement = $(this).data("target");				
+				var $scrollToElement = $(idElement);
+				
+				$(document).scrollTop($scrollToElement.offset().top-$('.navbar').height()-10);
+
+				event.preventDefault();
+				event.stopPropagation();
+			});
 		});
+		
 	</script>
 </body>
 </html>

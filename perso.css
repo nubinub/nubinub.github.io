@@ -12,9 +12,6 @@ body{
 	box-shadow: #AAA 0 0 15px;
 	background-color: #EEE;
 }
-.myjumbotron:hover{
-	background-color: #DDD;
-}
 .myjumbotron .page-header{
 	border:none;
 }
