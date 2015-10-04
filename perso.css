@@ -1,7 +1,7 @@
 body{
  	padding-top:50px;
- 	background-color: #FFF;
-
+ 	background-color: #e9eaed;
+	color:#777;
  }
  .navbar-mynavbar{
  	box-shadow:#AAA 0 0 15px;
@@ -10,14 +10,16 @@ body{
 .myjumbotron{
 	border-bottom:#AAA solid 1px;
 	box-shadow: #AAA 0 0 15px;
-	background-color: #EEE;
+	background-color: #FFF;
 }
 .myjumbotron .page-header{
 	border:none;
+	
 }
 .myjumbotron .page-header h1{
 	font-size:2em;
 	font-weight:bold;
+	color:#444;
 }
 .myjumbotron p{
 	font-size:1.2em;
@@ -33,10 +35,13 @@ body{
 	box-shadow:#AAA 0 0 15px;
 	border-radius:0px;
 	border:#AAA solid 1px;
-	background-color:#EEE;
+	background-color:#FFF;
 	padding-right:0;
 	padding-left:0;
 	padding-bottom:0;
+}
+.well-mywell:hover{
+	box-shadow: #AAA 0 0 15px 2px;
 }
 .well-mywell .myheader{
 	border:none;
@@ -46,6 +51,7 @@ body{
 	font-size:1.5em;
 	font-weight:bold;
 	text-align:center;
+	color:#000;
 }
 .well-mywell p{
 	font-size: 1em;
@@ -55,23 +61,23 @@ body{
 	text-align:center;
 }
 .experience-unit{
-	border-top :#AAA solid 1px;
-	
+	border-top :#AAA solid 1px;	
 	padding:0px 5px 15px 15px;
 	margin-top:0px;
-	background-color:#EEE;
+	background-color:inherit;
 }
 .experience-unit:hover{
-	background-color: #DDD;
-	box-shadow:#AAA 0 0 10px;
+	background-color:  #e9eaed;
 }
 .experience-unit h3{
 	font-weight:bold;
 	font-size: 1.3em;
+	color:#444;
 }
 .experience-unit h4{
 	font-size:1em;
 	font-weight:bold;
+	color:#777;
 }
 .experience-unit .experience-keywords{
 	font-size:0.9em;
