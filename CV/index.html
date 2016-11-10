@@ -366,6 +366,25 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="script.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+
+			$(document).on("click",".scroll-to-section",function(event){
+				var idElement = $(this).data("target");				
+				var $scrollToElement = $(idElement);
+				
+				$(document).scrollTop($scrollToElement.offset().top-$('.navbar').height()-10);
+
+				event.preventDefault();
+				event.stopPropagation();
+			});
+
+			$.get('https://en.lichess.org/api/user/nubinub', function(data) {
+				$('#blitz-rating').text(data.perfs.blitz.rating);
+				$('#bullet-rating').text(data.perfs.bullet.rating);
+			});
+		});
+	</script>
 </body>
 </html>
