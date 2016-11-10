@@ -36,6 +36,7 @@ body{
 	border-radius:0px;
 	border:#AAA solid 1px;
 	background-color:#FFF;
+	padding-top:0;
 	padding-right:0;
 	padding-left:0;
 	padding-bottom:0;
@@ -52,6 +53,11 @@ body{
 	font-weight:bold;
 	text-align:center;
 	color:#000;
+	margin-top:0px;
+	padding-top:10px;
+	margin-bottom:0px;
+	padding-bottom:10px;
+	background-color:#e9eaed;
 }
 .well-mywell p{
 	font-size: 1em;
@@ -73,9 +79,6 @@ body{
 	padding-bottom:10px;
 	margin-top:0px;
 	background-color:inherit;
-}
-.experience-unit:hover{
-	background-color:  #e9eaed;
 }
 .experience-unit h3{
 	font-weight:bold;
