@@ -11,6 +11,7 @@ body{
 	border-bottom:#AAA solid 1px;
 	box-shadow: #AAA 0 0 15px;
 	background-color: #FFF;
+	text-align:justify;
 }
 .myjumbotron .page-header{
 	border:none;
@@ -40,6 +41,7 @@ body{
 	padding-right:0;
 	padding-left:0;
 	padding-bottom:0;
+	text-align: justify;
 }
 .well-mywell:hover{
 	box-shadow: #AAA 0 0 15px 2px;
@@ -67,6 +69,9 @@ body{
 	padding-left:45px;
 	padding-right:45px;	
 	text-align:center;
+}
+.image-wrapper img{
+	margin-bottom:5px;
 }
 .image-splitter{
 	margin-bottom:5px;
