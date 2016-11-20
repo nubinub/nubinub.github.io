@@ -32,6 +32,9 @@ body{
 .skill-btn{
 	margin:2px 2px;
 }
+.skill-btn:hover{
+	cursor:default;
+}
 .well-mywell{
 	box-shadow:#AAA 0 0 15px;
 	border-radius:0px;
