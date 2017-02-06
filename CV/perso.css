@@ -1,17 +1,19 @@
 body{
  	padding-top:50px;
- 	background-color: #e9eaed;
-	color:#777;
+ 	background-color: #f1f1f1;
+	color:#333;
  }
  .navbar-mynavbar{
- 	box-shadow:#AAA 0 0 15px;
- 	border-bottom:#AAA solid 1px;
+ 	border-bottom:#e8e8e8 solid 1px;
+ 	background-color:#FFF!important;
+ 	background-image:none!important;
+ 	
  }
 .myjumbotron{
-	border-bottom:#AAA solid 1px;
-	box-shadow: #AAA 0 0 15px;
 	background-color: #FFF;
+	border-bottom:#e8e8e8 solid 1px;
 	text-align:justify;
+	box-shadow:0 1px 2px rgba(0,0,0,.1);
 }
 .myjumbotron .page-header{
 	border:none;
@@ -20,7 +22,7 @@ body{
 .myjumbotron .page-header h1{
 	font-size:2em;
 	font-weight:bold;
-	color:#444;
+	color:#333;
 }
 .myjumbotron p{
 	font-size:1.2em;
@@ -36,18 +38,15 @@ body{
 	cursor:default;
 }
 .well-mywell{
-	box-shadow:#AAA 0 0 15px;
 	border-radius:0px;
-	border:#AAA solid 1px;
 	background-color:#FFF;
 	padding-top:0;
 	padding-right:0;
 	padding-left:0;
 	padding-bottom:0;
 	text-align: justify;
-}
-.well-mywell:hover{
-	box-shadow: #AAA 0 0 15px 2px;
+	border:#e8e8e8 solid 1px;
+	box-shadow:0 1px 2px rgba(0,0,0,.1);
 }
 .well-mywell .myheader{
 	border:none;
@@ -57,12 +56,12 @@ body{
 	font-size:1.5em;
 	font-weight:bold;
 	text-align:center;
-	color:#000;
+	color:#333;
 	margin-top:0px;
 	padding-top:10px;
 	margin-bottom:0px;
 	padding-bottom:10px;
-	background-color:#e9eaed;
+	background-color:#FFF;
 }
 .well-mywell p{
 	font-size: 1em;
@@ -83,7 +82,7 @@ body{
 	padding-right:3px;
 }
 .experience-unit{
-	border-top :#AAA solid 1px;
+	border-top :#e8e8e8 solid 1px;
 	padding-bottom:10px;
 	margin-top:0px;
 	background-color:inherit;
@@ -91,12 +90,12 @@ body{
 .experience-unit h3{
 	font-weight:bold;
 	font-size: 1.3em;
-	color:#444;
+	color:#333;
 }
 .experience-unit h4{
 	font-size:1em;
 	font-weight:bold;
-	color:#777;
+	color:#333;
 }
 .experience-unit .experience-keywords{
 	font-size:0.9em;
