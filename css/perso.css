@@ -1,0 +1,105 @@
+body{
+ 	padding-top:50px;
+ 	background-color: #FFF;
+	color:#777;
+ }
+ .navbar-mynavbar{
+ 	box-shadow:#AAA 0 0 15px;
+ 	border-bottom:#AAA solid 1px;
+ }
+.myjumbotron{
+	border-bottom:#AAA solid 1px;
+	box-shadow: #AAA 0 0 15px;
+	background-color: #FFF;
+	text-align:justify;
+}
+.myjumbotron .page-header{
+	border:none;
+	
+}
+.myjumbotron .page-header h1{
+	font-size:2em;
+	font-weight:bold;
+	color:#444;
+}
+.myjumbotron p{
+	font-size:1.2em;
+}
+.page-header{
+	padding:0;
+	margin:0;
+}
+.skill-btn{
+	margin:2px 2px;
+}
+.skill-btn:hover{
+	cursor:default;
+}
+.well-mywell{
+	box-shadow:#AAA 0 0 15px;
+	border-radius:0px;
+	border:#AAA solid 1px;
+	background-color:#FFF;
+	padding-top:0;
+	padding-right:0;
+	padding-left:0;
+	padding-bottom:0;
+	text-align: justify;
+}
+.well-mywell:hover{
+	box-shadow: #AAA 0 0 15px 2px;
+}
+.well-mywell .myheader{
+	border:none;
+}
+.well-mywell .myheader h2{
+	border:none;
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
+	color:#000;
+	margin-top:0px;
+	padding-top:10px;
+	margin-bottom:0px;
+	padding-bottom:10px;
+	background-color:#e9eaed;
+}
+.well-mywell p{
+	font-size: 1em;
+}
+.image-wrapper{
+	padding-top:5px;
+	padding-left:45px;
+	padding-right:45px;	
+	text-align:center;
+}
+.image-wrapper img{
+	margin-bottom:5px;
+}
+.image-splitter{
+	margin-bottom:5px;
+	margin-right:0px;
+	padding:0;
+	padding-right:3px;
+}
+.experience-unit, .stat-unit{
+	border-top :#AAA solid 1px;
+	padding-bottom:10px;
+	margin-top:0px;
+	background-color:inherit;
+}
+.experience-unit h3{
+	font-weight:bold;
+	font-size: 1.3em;
+	color:#444;
+}
+.experience-unit h4{
+	font-size:1em;
+	font-weight:bold;
+	color:#777;
+}
+.experience-unit .experience-keywords{
+	font-size:0.9em;
+	text-align:right;	
+	font-weight:bold;
+}

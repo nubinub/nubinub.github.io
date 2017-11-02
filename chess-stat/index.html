@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess Stats</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/perso.css">
+	<link rel="stylesheet" href="../css/pie.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-mynavbar">
+		    <div class="container">
+				<ul class="nav navbar-nav">
+					<li><a class="scroll-to-section" data-target="#formation" href="../"><span class="glyphicon glyphicon-home"></span></a></li>
+				</ul>
+			</div>	  
+		</nav>
+	</header>
+	<main>
+		<section class="jumbotron myjumbotron">
+			
+				<div class="container">
+
+					<div class="page-header">
+						<h1>Chess Stats</h1>
+					</div>
+					
+					<p>Simple tool to track down last results of a selected player on lichess.</p>
+					
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="well well-sm well-mywell stat-well stat-form">
+						<div class="row">
+
+							<div class="col-md-9">
+								<div class="form-group">
+									<input id="player-name" type="text" class="form-control" placeholder="Enter a player name"/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-primary form-control" onclick="fetchData()"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</div>
+							<div class="col-md-6 col-md-offset-3">
+								
+								<div id="data-found" class="alert alert-success">
+									<strong>Data found</strong>
+								</div>
+								<div id="player-not-found" class="alert alert-danger">
+									<strong>Player not found</strong>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 stats-content">
+					<div class="well well-sm well-mywell stat-well">
+						<div class="page-header myheader">
+							<h2 id="player-name-title"></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row stats-content">
+
+				<div class="col-md-4">
+					<div class="well well-sm well-mywell stat-well">
+						<div class="page-header myheader">
+							<h2>Overall</h2>
+						</div>
+						<div class="stat-unit">
+							<svg id="stats-overall"></svg>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="well well-sm well-mywell stat-well">
+						<div class="page-header myheader">
+							<h2>White</h2>
+						</div>
+						<div class="stat-unit">
+							<svg id="stats-white"></svg>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="well well-sm well-mywell stat-well">
+						<div class="page-header myheader">
+							<h2>Black</h2>
+						</div>
+						<div class="stat-unit">
+							<svg id="stats-black"></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="test.js">
+	</script>
+</body>
+</html>
