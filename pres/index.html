@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+						<h2> Algèbre de Boole et Javascript</h2>
+
+				</section>
+				<section >
+					<ol>
+						<li>Algèbre de Boole</li>
+						<ol>
+								<li>Introduction</li>
+								<li>Propriétés</li>
+								<li>Exercices</li>
+						</ol>
+						<li>Javascript</li>
+						<ol>
+								<li>Rappels</li>
+								<li>Truthy/Falsy</li>
+								<li>Exercices</li>
+						</ol>
+					</ol>
+				</section>
+
+				<section >
+					<h5>Définition</h5>
+					<blockquote cite="https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_(logique)">L'algèbre de Boole, ou calcul booléen, est la partie des mathématiques qui s'intéresse à une approche algébrique de la logique, vue en termes de variables, d'opérateurs et de fonctions sur les variables logiques, ce qui permet d'utiliser des techniques algébriques pour traiter les expressions à deux valeurs du calcul des propositions.</blockquote>
+				</section>
+
+				<section >
+					<h5>Les bases</h5>
+					<p>L'ensemble des valeurs possibles: B = {1, 0}. Par la suite on considère {a, b, c} ⊂ B </p>
+					<p>L'opérateur <strong>.</strong> (et): avec a.b = 1 ssi a = 1 et b = 1.</p>
+					<p>L'opérateur <strong>+</strong> (ou): avec a+b = 0 ssi a = 0 et b = 0.</p>
+					<p>L'opérateur <strong>¬</strong> (non): avec ¬a = 1 si a = 0 et ¬a = 0 si a = 1</p>
+				</section>
+
+				<section>
+					<div style="width:50%;float:left">
+						<span class="fragment" data-fragment-index="0">
+							<h5>Associativité</h5>
+							<p>(a+b)+c = a+(b+c) = a+b+c</p>
+							<p>(a.b).c = a.(b.c) = a.b.c</p>
+						</span>
+						<span class="fragment" data-fragment-index="1">
+							<h5>Commutativité</h5>
+							<p>a+b = b+a</p>
+							<p>a.b = b.a</p>
+						</span>
+						<span class="fragment" data-fragment-index="2">
+							<h5>Distributivité</h5>
+							<p>a.(b+c) = a.b+a.c</p>
+							<p>a+(b.c) = a+b.a+c</p>
+						</span>
+					</div>
+					<div style="width:50%;float:left">
+						<span class="fragment" data-fragment-index="3">
+							<h5>Idempotence</h5>
+							<p>a+a = a</p>
+							<p>a.a = a</p>
+						</span>
+						<span class="fragment" data-fragment-index="4">
+							<h5>Elements neutres</h5>
+							<p>a+0 = a</p>
+							<p>a.1 = a</p>
+						</span>
+						<span class="fragment" data-fragment-index="5">
+							<h5>Absorption</h5>
+							<p>a+1 = 1</p>
+							<p>a.0 = 0</p>
+						</span>
+					</div>
+				</section>
+
+				<section>
+					<h5>Théorème de Morgan</h5>
+					<p>¬(a+b) = ¬a.¬b<p>
+					<p>¬(a.b) = ¬a+¬b<p>
+				</section>
+
+				<section>
+					<h5>Simplifier</h5>
+					<p>a+a.b = <span class="fragment" data-fragment-index="1">a.1+a.b = a.(1+b) = a.1 = a</span></p>
+					<p>a+¬a.b = <span class="fragment" data-fragment-index="2"> (a+¬a).(a+b) = 1.(a+b) = a+b</span></p>
+				</section>
+
+				<section>
+					<h5>Javascript</h5>
+					<p>Typage dynamique et faible</p>
+					<p>Les différents types primitifs:
+						<ul>
+								<li> boolean: true et false</li>
+								<li> number: Pour les nombres entiers ou décimaux</li>
+								<li> string: Pour les chaînes de caractères</li>
+								<li> null: pour la valeur nulle</li>
+								<li> undefined: pour les valeurs non définies</li>				
+						</ul>
+					</p>
+					<p>Le type Object</p>
+				</section>
+				<section>
+					<h5>Truthy/Falsy</h5>
+					<p>Les seules valeurs qui sont évaluées à false sont les suivantes:
+						<ul>
+							<li>false</li>
+							<li>0</li>
+							<li>"" (chaîne vide)</li>
+							<li>null</li>
+							<li>undefined</li>
+							<li>NaN</li>
+						</ul>
+					</p>
+					<p>Toutes les autres valeurs sont évaluées à vrai</p>
+				</section>
+
+				<section>
+					<h5>Opérateur booléen</h5>
+					<p>Soit quatres variables, falsy, truthy, a et b:
+						<ul>
+							<li>b = falsy && a ==> b === falsy</li>
+							<li>b = truthy && a ==> b === a</li>
+							<li>b = falsy || a ==> b === a</li>
+						    <li>b = truthy || a ==> b === truthy</li>
+						</ul>
+					</p>
+					<p>Exemples d'utilisation:
+						<ul>
+							<li>b = monObjet || {}</li>
+							<li>b = monTableau || []</li>
+							<li>b = !!maVariable</li>
+						</ul>
+					</p>
+
+
+				</section>
+
+				<section>
+					<h5>Truthy ou falsy ?</h5>
+					<p>"0" && 0 = <span class="fragment" data-fragment-index="1"> 0 => falsy</span></p>
+					<p>"0" || 0 = <span class="fragment" data-fragment-index="2"> "0" = truthy</span></p>
+					<p>undefined || {} && 0 || "0" && []  = <span class="fragment" data-fragment-index="3"> [] = truthy</span></p>
+				</section>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
